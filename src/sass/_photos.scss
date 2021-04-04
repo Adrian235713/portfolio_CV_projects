@@ -1,0 +1,30 @@
+.app {
+  .photos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      padding: 1em;
+    }
+    img {
+      border-radius: 90px;
+      border: solid 0.2em white;
+    }
+    div {
+      width: 100%;
+      height: auto;
+      background-image: url(../img/styleImgAplaction/xxx4.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      img {
+        max-width: 100%;
+        max-height: auto;
+        display: block;
+        margin: auto auto;
+        padding: 10px;
+      }
+    }
+  }
+}

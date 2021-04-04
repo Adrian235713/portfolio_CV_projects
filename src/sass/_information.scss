@@ -1,0 +1,38 @@
+.app {
+  .information {
+    width: 100%;
+    min-height: 60%;
+    background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
+
+    div {
+      margin-top: 0.8em;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.7em;
+      padding: 0.4em;
+      padding-top: 0.7em;
+      text-transform: uppercase;
+      border-bottom: solid 0.3em orange;
+    }
+    h1:nth-child(1) {
+      border-top: solid 0.3em orange;
+      padding: 0.5em;
+    }
+    h2 {
+      font-size: 1.5em;
+      padding: 0.2em;
+    }
+    h3 {
+      text-align: right;
+      padding: 0.2em;
+    }
+    p {
+      padding: 0.2em;
+    }
+    a {
+      font-size: 1.1em;
+      padding: 1em;
+    }
+  }
+}

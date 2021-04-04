@@ -1,0 +1,49 @@
+.app {
+  header {
+    border-top: solid 0.2em orange;
+    border-bottom: solid 0.2em orange;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    a {
+      font-size: 1.1em;
+    }
+    .button {
+      background-color: orange;
+      border: none;
+      color: white;
+      padding: 0.6em 1.3em;
+      cursor: pointer;
+      border-radius: 52% 47% 51% 49% / 22% 22% 22% 22%;
+      font-size: 0.9em;
+      text-transform: uppercase;
+      font-weight: bold;
+      outline: none;
+    }
+    .button:hover {
+      background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+      background-color: #ffab23;
+    }
+    .button:active {
+      border: solid 0.15em white;
+    }
+    .documentsDiv {
+      background-color: black;
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      top: 0;
+      img {
+        padding: 0.5em;
+        width: 50vw;
+        @media screen and (max-width: 1000px) {
+          width: 100vw;
+        }
+      }
+    }
+  }
+}
