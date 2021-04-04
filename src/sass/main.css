@@ -177,6 +177,7 @@ body {
 }
 
 .app header {
+  background-color: black;
   border-top: solid 0.2em orange;
   border-bottom: solid 0.2em orange;
   padding: 0.5em;
@@ -218,6 +219,14 @@ body {
   border: solid 0.15em white;
 }
 
+.app header .buttonFixed {
+  position: fixed;
+  top: 1vw;
+  left: calc(50vw - 2.5em);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
 .app header .documentsDiv {
   background-color: black;
   position: absolute;
@@ -232,7 +241,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  top: 0;
 }
 
 .app header .documentsDiv img {

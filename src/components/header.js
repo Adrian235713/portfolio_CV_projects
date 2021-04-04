@@ -14,7 +14,9 @@ function Header() {
         setDocuments(true);
         console.log(documents);
         setDocumentsInf(<div className="documentsDiv">
-            <button type="button" className="button" onClick={()=>{closeDokuments()}}>close</button>
+            <div className="buttonFixed">
+                <button type="button  position: fixed;"  className="button" onClick={()=>{closeDokuments()}}>close</button>
+            </div>
             <img src={rec1} alt="Coders Lab Diplom"/>
             <img src={rec2} alt="Coders Lab Diplom"/>
             <img src={rec3} alt="Coders Lab Diplom"/>
