@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {AiOutlineDownload} from 'react-icons/ai';
 // ----------------------------------------------------------------------------------------------------
 import dip1 from '../img/diploma/diplomaBiology.jpg'
 import dip2 from '../img/diploma/diplomaPedgoric.jpg'
@@ -11,7 +12,8 @@ import hobby1 from '../img/hobby/hobby1.jpg'
 import hobby2 from '../img/hobby/hobby2.jpg'
 import hobby3 from '../img/hobby/hobby3.jpg'
 import hobby4 from '../img/hobby/hobby4.jpg'
-
+import hobby5 from '../img/hobby/hobby5.jpg'
+import hobby6 from '../img/hobby/hobby6.jpg'
 
 function Header() {
     // ----------------------------------------------------------------------------------------------------
@@ -47,6 +49,9 @@ function Header() {
                 <img src={hobby1} alt=""/>
                 <img src={hobby0} alt=""/>
                 <img src={hobby3} alt=""/>
+                <img src={hobby2} alt=""/>
+                <img src={hobby5} alt=""/>
+                <img src={hobby6} alt=""/>
                 <img src={hobby4} alt=""/>
             </div>
         )
@@ -59,15 +64,14 @@ function Header() {
 
     return (
         <header>
-            <p><a href="">adrianponiatowski24610@gmail.com</a></p>
             <button type="button" className="button">projects</button>
             <button type="button" className="button" onClick={()=>{openDocuments()}} >documents</button>
             {documentsInf}
-            <a href="https://drive.google.com/drive/folders/1nTU6pe835HWf1gzB7x7RqjdVdnqMG50m?usp=sharing" target="blank">
-                <button type="button" className="button" >download</button>
-            </a>
             <button type="button" className="button" onClick={()=>{openHobby()}}>hobby</button>
             {hobbyInf}
+            <a href="https://drive.google.com/drive/folders/1nTU6pe835HWf1gzB7x7RqjdVdnqMG50m?usp=sharing" target="blank">
+            <button type="button" className="button" ><AiOutlineDownload size="2em"/></button>
+            </a>
         </header>
     )
 }

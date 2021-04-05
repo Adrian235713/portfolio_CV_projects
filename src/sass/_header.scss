@@ -7,9 +7,6 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    a {
-      font-size: 1.1em;
-    }
     .button {
       background-color: orange;
       border: none;
@@ -17,7 +14,6 @@
       padding: 0.6em 1.3em;
       cursor: pointer;
       border-radius: 52% 47% 51% 49% / 22% 22% 22% 22%;
-      font-size: 0.9em;
       text-transform: uppercase;
       font-weight: bold;
       outline: none;
