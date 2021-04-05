@@ -228,6 +228,8 @@ body {
 }
 
 .app header .documentsDiv {
+  min-width: 50vw;
+  min-height: 100vh;
   background-color: black;
   position: absolute;
   top: 0;
@@ -241,6 +243,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+  .app header .documentsDiv {
+    min-width: 100vw;
+    min-height: 100vh;
+  }
 }
 
 .app header .documentsDiv img {

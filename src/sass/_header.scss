@@ -37,6 +37,12 @@
     }
 
     .documentsDiv {
+      min-width: 50vw;
+      min-height: 100vh;
+      @media screen and (max-width: 1000px) {
+        min-width: 100vw;
+        min-height: 100vh;
+      }
       background-color: black;
       position: absolute;
       top: 0;
