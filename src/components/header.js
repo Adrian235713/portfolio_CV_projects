@@ -61,10 +61,188 @@ function Header() {
         setHobbyInf(null)
     }
     // ----------------------------------------------------------------------------------------------------
+    const [projects,setProjects] = useState(false);
+    const [projectsInf,setProjectsInf] = useState(null)
+    const openProjectInf = () => {
+        setProjects(true)
+        setProjectsInf(
+        <div className='projectsInf'>
+            <div className="buttonFixed">
+                 <button type="button  position: fixed;"  className="button" onClick={()=>{closeProjects()}}>close</button>
+            </div>
+                
+            <ul>
+                <li>
+                    <a href="">project 1</a>
 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.</p>
+                </li>
+                <li>
+                <a href="">project 2</a>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.</p>
+                </li>
+                        <li>
+                    <a href="">project 3</a>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.</p>
+                </li>
+
+                        <li>
+                    <a href="">project 5</a>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.</p>
+                </li>
+
+                <li>
+                    <a href="">project 6</a>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.</p>
+                </li>
+                <li>
+                    <a href="">project 1</a>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.</p>
+                </li>
+                <li>
+                <a href="">project 2</a>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.</p>
+                </li>
+                        <li>
+                    <a href="">project 3</a>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.</p>
+                </li>
+
+                        <li>
+                    <a href="">project 5</a>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.</p>
+                </li>
+
+                <li>
+                    <a href="">project 6</a>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.</p>
+                </li>
+                <li>
+                    <a href="">project 7</a>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.</p>
+                </li>
+                <li>
+                <a href="">project 8</a>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.</p>
+                </li>
+                        <li>
+                    <a href="">project 9</a>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.</p>
+                </li>
+
+                        <li>
+                    <a href="">project 10</a>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sint id, 
+                        impedit culpa ipsam quo error cum? Dolorum, quod necessitatibus! Asperiores id dolorum maxime? 
+                        Eveniet nemo eligendi sapiente quo tempora.</p>
+                </li>
+            </ul>
+        </div>
+        )
+    }
+    const closeProjects = () => {
+        setProjectsInf(null)
+    }
+    // ----------------------------------------------------------------------------------------------------
     return (
         <header>
-            <button type="button" className="button">projects</button>
+            <button type="button" className="button" onClick={()=>{openProjectInf()}}>projects</button>
+            {projectsInf}
             <button type="button" className="button" onClick={()=>{openDocuments()}} >documents</button>
             {documentsInf}
             <button type="button" className="button" onClick={()=>{openHobby()}}>hobby</button>

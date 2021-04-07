@@ -53,5 +53,39 @@
         }
       }
     }
+    .projectsInf {
+      width: 51vw;
+      @media screen and (max-width: 1000px) {
+        width: 100vw;
+        position: absolute;
+      }
+      min-height: 200vh;
+      position: absolute;
+      top: 0;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      scroll-margin-block: inherit;
+      li {
+        font-size: 1.1em;
+        border-bottom: solid 0.1em white;
+        margin-top: 2em;
+        a {
+          text-decoration: none;
+          text-align: center;
+          font-size: 1.3em;
+          margin-left: 3em;
+          text-transform: uppercase;
+        }
+
+        p {
+          margin: 1em;
+          text-align: justify;
+        }
+      }
+      li:nth-child(1) {
+        margin-top: 7vh;
+      }
+    }
   }
 }
